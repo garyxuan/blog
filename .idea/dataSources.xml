@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="508293811">
-    <data-source source="LOCAL" name="MySQL - @localhost" uuid="a9650129-bc81-4f7d-a0ed-c505c3c988c2">
+  <component name="DataSourceManagerImpl" format="xml" hash="3640022919">
+    <data-source source="LOCAL" name="MySQL - myblog@localhost" uuid="a9650129-bc81-4f7d-a0ed-c505c3c988c2">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/myblog</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
