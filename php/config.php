@@ -6,5 +6,8 @@
  * Time: 15:20
  */
 $db_config = array(
-  
+  "db_name" => "MYBLOG",
+  "db_host" => "localhost",
+  "username" => "root",
+  "password" => "1230123O"
 );

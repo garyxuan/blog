@@ -1,3 +1,6 @@
+<?php
+require_once("php/action.php");
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -31,8 +34,11 @@
 <div class="container">
     <div class="starter_template">
         <ul class="list_ul">
-            <li class="list_li">第一篇文章</li>
-            <li class="list_li">第二篇文章</li>
+            <?php
+            foreach ($result as $row) {
+                echo '<li class="list_li">'.$row["title"].'</li>';
+            }
+            ?>
         </ul>
     </div>
 </div>

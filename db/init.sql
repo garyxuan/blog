@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS `MYBLOG`;
-CREATE DATABASE IF NOT EXISTS `MYBLOG`;
+CREATE DATABASE IF NOT EXISTS `MYBLOG` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE MYBLOG;
 DROP TABLE IF EXISTS `USER`;
 CREATE TABLE IF NOT EXISTS `USER` (
@@ -29,10 +29,10 @@ CREATE TABLE IF NOT EXISTS `BLOG` (
   COMMENT = '博客表';
 DROP TABLE IF EXISTS `LOG`;
 CREATE TABLE IF NOT EXISTS `LOG` (
-  `log_id`      INT AUTO_INCREMENT,
-  `user_id`     INT         NOT NULL DEFAULT 0,
-  `data`        VARCHAR(60) NOT NULL DEFAULT '',
-  `createdtime` DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `log_id`      INT                                                                                                                                                                                                                                                                                                                                                                                                          AUTO_INCREMENT,
+  `user_id` INT          NOT NULL                                                                                                                                                                                                                                                                                                                                                                                                 DEFAULT 0,
+  `data`    VARCHAR(60) NOT NULL                                                                                                                                                                                                                                                                                                                                                                                         DEFAULT '',
+  `createdtime` DATETIME NOT NULL                                                                                                                                                                                                                                                                                                                                                                                            DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`log_id`),
   CONSTRAINT `FK_LOG_USER_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `USER` (`user_id`)
 )
