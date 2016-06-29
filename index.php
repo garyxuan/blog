@@ -8,25 +8,17 @@ require_once("php/action.php");
     <meta http-equiv="x-ua-compatible" name="IE=EDGE">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Home</title>
+    <link rel="shortcut icon" type="imange/x-icon" href="public/img/favicon.ico">
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/css/starter-template.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -36,7 +28,7 @@ require_once("php/action.php");
         <ul class="list_ul">
             <?php
             foreach ($result as $row) {
-                echo '<li class="list_li">'.$row["title"].'</li>';
+                echo '<li class="list_li">' . $row["title"] . '</li>';
             }
             ?>
         </ul>
