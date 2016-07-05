@@ -11,8 +11,6 @@ $blog_id = $_GET["blog_id"];
 try {
     $db     = get_db_connection($db_config);
     $result = $db->query("SELECT title,content FROM blog  WHERE blog_id={$blog_id}")->fetch();
-    var_dump($result);
-    die;
 } catch (PDOException $e) {
     log($e->getMessage());
 }

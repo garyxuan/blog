@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="2149882538">
     <data-source source="LOCAL" name="MySQL - myblog@localhost" uuid="a9650129-bc81-4f7d-a0ed-c505c3c988c2">
-      <driver-ref>289716f3-6837-43b6-b217-1007a6197714</driver-ref>
+      <driver-ref>6ab3de6f-b397-4f71-82da-63cd27e3a5c4</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/myblog</jdbc-url>
